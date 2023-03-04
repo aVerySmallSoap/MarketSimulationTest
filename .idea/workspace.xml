@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ea518a0-3005-4ca9-9618-56d47b11b521" name="Changes" comment="Initial Tests">
+    <list default="true" id="3ea518a0-3005-4ca9-9618-56d47b11b521" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entities/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entities/Products/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entities/Products/CPU.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entities/Products/CPU.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entities/Products/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entities/Products/Product.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +75,7 @@
       <updated>1677858901837</updated>
       <workItem from="1677858903147" duration="665000" />
       <workItem from="1677899232806" duration="3296000" />
-      <workItem from="1677905721889" duration="2453000" />
+      <workItem from="1677905721889" duration="2760000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Tests">
       <created>1677906503447</created>
@@ -84,7 +84,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677906503447</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Product creation">
+      <created>1677908404930</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1677908404930</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -103,7 +110,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial Tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial Tests" />
+    <MESSAGE value="Product creation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Product creation" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
 </project>

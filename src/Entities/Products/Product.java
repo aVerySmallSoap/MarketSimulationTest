@@ -1,13 +1,19 @@
 package Entities.Products;
 
+import Entities.Company;
+
+import java.util.HashMap;
+
 public class Product {
-    String Name = null;
-    String Description = null;
-    float Price = 0;
-    float appreciatedValue = 0;
-    int Demand = 0;
-    int Stock = 0;
-    float productionCosts = 0;
+
+    HashMap<Company, Product> companyProductHashMap = new HashMap<>();
+    String Name;
+    String Description;
+    float Price;
+    float appreciatedValue;
+    int Demand;
+    int Stock;
+    float productionCosts;
 
     Product(String Name,
             String Description,
@@ -15,7 +21,8 @@ public class Product {
             float appreciatedValue,
             int Demand,
             int Stock,
-            float productionCosts){
+            float productionCosts,
+            Company Owner){
         this.Name = Name;
         this.Description = Description;
         this.Price = Price;
@@ -23,5 +30,6 @@ public class Product {
         this.Demand = Demand;
         this.Stock = Stock;
         this.productionCosts = productionCosts;
+        companyProductHashMap.put(Owner, this);
     }
 }
