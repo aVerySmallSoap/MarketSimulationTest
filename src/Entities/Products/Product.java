@@ -6,30 +6,51 @@ import java.util.HashMap;
 
 public class Product {
 
-    HashMap<Company, Product> companyProductHashMap = new HashMap<>();
-    String Name;
-    String Description;
-    float Price;
-    float appreciatedValue;
-    int Demand;
-    int Stock;
-    float productionCosts;
+    static HashMap<Company, Product> companyProductHashMap = new HashMap<>();
+    private final String Name;
+    private final String Description;
+    private final float Price;
+    private final float appreciatedValue;
+    private final int Demand;
+    private final int Stock;
+    private final float productionCosts;
 
-    Product(String Name,
-            String Description,
-            float Price,
-            float appreciatedValue,
-            int Demand,
-            int Stock,
-            float productionCosts,
-            Company Owner){
-        this.Name = Name;
-        this.Description = Description;
-        this.Price = Price;
-        this.appreciatedValue = appreciatedValue;
-        this.Demand = Demand;
-        this.Stock = Stock;
-        this.productionCosts = productionCosts;
-        companyProductHashMap.put(Owner, this);
+    Product(ProductBuilder builder){
+        this.Name = builder.Name;
+        this.Description = builder.Description;
+        this.Price = builder.Price;
+        this.appreciatedValue = builder.appreciatedValue;
+        this.Demand = builder.Demand;
+        this.Stock = builder.Stock;
+        this.productionCosts = builder.productionCosts;
+        companyProductHashMap.put(builder.Owner, this);
+    }
+
+    public String getName() {
+        return Name;
+    }
+
+    public String getDescription() {
+        return Description;
+    }
+
+    public float getPrice() {
+        return Price;
+    }
+
+    public float getAppreciatedValue() {
+        return appreciatedValue;
+    }
+
+    public int getDemand() {
+        return Demand;
+    }
+
+    public int getStock() {
+        return Stock;
+    }
+
+    public float getProductionCosts() {
+        return productionCosts;
     }
 }

@@ -11,7 +11,6 @@ public class Company {
     private float CONFIDENCE;
 
     public Company(){
-        List.add(this);
     }
 
     public Company(String Name, float initialCapital, float netWorth, float CONFIDENCE){
