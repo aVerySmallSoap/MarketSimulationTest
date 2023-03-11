@@ -5,13 +5,9 @@ import java.util.ArrayList;
 public class Company {
     static ArrayList<Company> List = new ArrayList<>();
     private String Name;
-    private float investmentCapital;
     private float initialCapital;
     private float netWorth;
     private float CONFIDENCE;
-
-    public Company(){
-    }
 
     public Company(String Name, float initialCapital, float netWorth, float CONFIDENCE){
         this.Name = Name;
@@ -29,12 +25,8 @@ public class Company {
         return CONFIDENCE;
     }
 
-    public void setCONFIDENCE(float confidence){
-        CONFIDENCE = confidence;
-    }
-
-    public void setName(String name) {
-        Name = name;
+    public static Company getCompany(int index){
+        return List.get(index);
     }
 
     public static void retrieveList(){

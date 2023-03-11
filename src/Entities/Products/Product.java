@@ -3,27 +3,29 @@ package Entities.Products;
 import Entities.Company;
 
 import java.util.HashMap;
+import java.util.HashSet;
 
 public class Product {
-
-    static HashMap<Company, Product> companyProductHashMap = new HashMap<>();
+    private static HashMap<Company, Boolean> companyProductHashMap = new HashMap<Company, Boolean>();
     private final String Name;
     private final String Description;
+    private final String productType;
     private final float Price;
     private final float appreciatedValue;
     private final int Demand;
     private final int Stock;
     private final float productionCosts;
 
-    Product(ProductBuilder builder){
+    public Product(ProductBuilder builder){
         this.Name = builder.Name;
         this.Description = builder.Description;
+        this.productType = builder.productType;
         this.Price = builder.Price;
         this.appreciatedValue = builder.appreciatedValue;
         this.Demand = builder.Demand;
         this.Stock = builder.Stock;
         this.productionCosts = builder.productionCosts;
-        companyProductHashMap.put(builder.Owner, this);
+        companyProductHashMap.put(builder.Owner, new HashSet<>().add(this));
     }
 
     public String getName() {
@@ -52,5 +54,13 @@ public class Product {
 
     public float getProductionCosts() {
         return productionCosts;
+    }
+
+    public Boolean getProduct(Company c, Product p){
+        Boolean a = companyProductHashMap.get(c);
+        if(a.equals(p)){
+            return a;
+        }
+        return null;
     }
 }

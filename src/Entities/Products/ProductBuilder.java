@@ -1,22 +1,21 @@
 package Entities.Products;
 import Entities.Company;
 
-import static Entities.Products.Product.companyProductHashMap;
-
 public class ProductBuilder {
     protected final String Name;
     protected final String Description;
+    protected final String productType;
     protected float Price;
     protected float appreciatedValue;
     protected int Demand;
     protected int Stock;
     protected float productionCosts;
-
     protected final Company Owner;
 
-    public ProductBuilder(String Name, String  Description, Company Owner){
+    public ProductBuilder(String Name, String  Description, String productType, Company Owner){
         this.Name = Name;
         this.Description = Description;
+        this.productType = productType;
         this.Owner = Owner;
     }
 
@@ -46,7 +45,6 @@ public class ProductBuilder {
     }
 
     public Product Build(){
-        Product product = new Product(this);
-        return product;
+        return new Product(this);
     }
 }
