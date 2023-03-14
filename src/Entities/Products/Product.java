@@ -1,12 +1,6 @@
 package Entities.Products;
 
-import Entities.Company;
-
-import java.util.HashMap;
-import java.util.HashSet;
-
 public class Product {
-    private static HashMap<Company, Boolean> companyProductHashMap = new HashMap<Company, Boolean>();
     private final String Name;
     private final String Description;
     private final String productType;
@@ -25,7 +19,6 @@ public class Product {
         this.Demand = builder.Demand;
         this.Stock = builder.Stock;
         this.productionCosts = builder.productionCosts;
-        companyProductHashMap.put(builder.Owner, new HashSet<>().add(this));
     }
 
     public String getName() {
@@ -56,11 +49,4 @@ public class Product {
         return productionCosts;
     }
 
-    public Boolean getProduct(Company c, Product p){
-        Boolean a = companyProductHashMap.get(c);
-        if(a.equals(p)){
-            return a;
-        }
-        return null;
-    }
 }

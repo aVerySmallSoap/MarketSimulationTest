@@ -1,5 +1,7 @@
 package Entities;
 
+import Entities.Products.Product;
+
 import java.util.ArrayList;
 
 public class Company {
@@ -31,6 +33,9 @@ public class Company {
 
     public static void retrieveList(){
         List.forEach(n -> System.out.println(n.getName()));
+    }
+
+    public static Product getProduct(int index){
     }
 
     public static void generateEntities(){

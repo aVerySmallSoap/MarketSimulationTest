@@ -1,14 +1,13 @@
 import Entities.Company;
-import Entities.Products.Product;
 import Entities.Products.ProductBuilder;
 import Lirys.Engine;
 
 public class Main {
 
     static Engine engine = new Engine();
+    ProductBuilder cpu = new ProductBuilder("AMD", "CDD", "CPU", Company.getCompany(0));
     public static void main(String[] args) {
         engine.Run();
-        System.out.println(new Product(new ProductBuilder("i7-13700k", "Intel CPU", "CPU", Company.getCompany(1))
-                .Price(200)));
+        cpu.
     }
 }
