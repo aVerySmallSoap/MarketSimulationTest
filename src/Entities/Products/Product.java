@@ -1,6 +1,8 @@
 package Entities.Products;
 import Entities.Company;
+
 public class Product {
+    public static int numberOfAliveProducts;
     private final String Name;
     private final String Description;
     private final String productType;
@@ -18,6 +20,7 @@ public class Product {
         this.Stock = builder.Stock;
         this.appreciatedValue = 1;
         this.productionCosts = builder.productionCosts;
+        numberOfAliveProducts++;
     }
 
     public String getName() {
