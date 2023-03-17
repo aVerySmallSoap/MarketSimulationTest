@@ -7,7 +7,10 @@
     <list default="true" id="3ea518a0-3005-4ca9-9618-56d47b11b521" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entities/Company.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entities/Company.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entities/Market.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entities/Products/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entities/Products/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entities/Products/ProductBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entities/Products/ProductBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Lirys/Engine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lirys/Engine.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -37,22 +40,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Lirys/Desktop/Registry&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "E:/Coding Projects/Websites/MarketGame",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
@@ -86,7 +89,8 @@
       <workItem from="1678546298558" duration="2754000" />
       <workItem from="1678609174595" duration="645000" />
       <workItem from="1678694184703" duration="331000" />
-      <workItem from="1678770658568" duration="589000" />
+      <workItem from="1678770658568" duration="685000" />
+      <workItem from="1679071013045" duration="1583000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Tests">
       <created>1677906503447</created>
@@ -130,7 +134,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678549021743</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Add internal lists to constructors that contains products">
+      <created>1678771354780</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1678771354780</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -153,7 +164,8 @@
     <MESSAGE value="Added ownership to products" />
     <MESSAGE value="Tried builder design" />
     <MESSAGE value="logic error in constructor must fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="logic error in constructor must fix" />
+    <MESSAGE value="Add internal lists to constructors that contains products" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add internal lists to constructors that contains products" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
 </project>
